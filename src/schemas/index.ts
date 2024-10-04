@@ -1,5 +1,12 @@
 import * as yup from "yup";
 
+const clinicSchema = yup.object({
+  body: yup.object({
+    name: yup.string().required(),
+    address: yup.string(),
+  }),
+});
+
 const dentistSchema = yup.object({
   body: yup
     .object({
@@ -9,4 +16,4 @@ const dentistSchema = yup.object({
     .noUnknown(true),
 });
 
-export { dentistSchema };
+export { clinicSchema, dentistSchema };
