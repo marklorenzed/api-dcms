@@ -24,7 +24,7 @@ const validateHandler =
       );
       return next();
     } catch (err: any) {
-      res.status(400).json({ message: err.message });
+      res.status(400).json({ message: err.errors });
     }
   };
 

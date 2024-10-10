@@ -50,40 +50,40 @@ export type Database = {
           address: string | null
           created_at: string
           id: number
-          name: string | null
+          name: string
         }
         Insert: {
           address?: string | null
           created_at?: string
           id?: number
-          name?: string | null
+          name: string
         }
         Update: {
           address?: string | null
           created_at?: string
           id?: number
-          name?: string | null
+          name?: string
         }
         Relationships: []
       }
       dentist: {
         Row: {
-          "contact number": number | null
+          contact_number: number | null
           created_at: string
           id: number
-          name: string | null
+          name: string
         }
         Insert: {
-          "contact number"?: number | null
+          contact_number?: number | null
           created_at?: string
           id?: number
-          name?: string | null
+          name: string
         }
         Update: {
-          "contact number"?: number | null
+          contact_number?: number | null
           created_at?: string
           id?: number
-          name?: string | null
+          name?: string
         }
         Relationships: []
       }
